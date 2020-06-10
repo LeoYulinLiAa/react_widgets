@@ -1,1 +1,63 @@
 @import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+.clock {
+  font-family: 'Metal Mania', cursive;
+  font-size: 24px;
+  background: #98e61c;
+  width: 600px;
+  margin: auto;
+  padding: 2rem;
+  border: 0.25rem solid black;
+
+  & > p {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.tabs {
+  font-size: 24px;
+  background: #2936;
+  margin: auto;
+  width: 300px;
+  font-family: 'Segoe UI', 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+
+  article {
+    text-align: center;
+    border-left: 0.15rem solid black;
+    border-right: 0.15rem solid black;
+    border-bottom: 0.15rem solid black;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & > ul {
+    display: flex;
+    justify-content: space-around;
+
+    & > li {
+      // background: #894758;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border: 0.15rem solid black;
+      width: 200px;
+      text-align: center;
+      &.active {
+        border-bottom: none;
+        font-weight: 700;
+      }
+      &:hover {
+        background: black;
+        color: white;
+      }
+    }
+  }
+
+}
+
+* {
+  box-sizing: border-box;
+}
